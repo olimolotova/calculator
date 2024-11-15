@@ -1,0 +1,86 @@
+:root {
+    --btn-color: #4D4D4D;
+    --background-color: #1F1F1F;
+    --operator-color: #FDA01A;
+    --btn-hover: #777777;
+    --btn-active: #888888;
+    --operator-hover: #FDBB2A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: white;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("./src/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calculator {
+    width: 450px;
+}
+
+input {
+    border: none;
+    background-color: var(--btn-color);
+    width: 100%;
+    height: 85px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 64px;
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    background-color: var(--background-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: var(--btn-color);
+    padding: 25px;
+    border-radius: 100%;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.operator,
+.clear {
+    background-color: var(--operator-color);
+}
+
+.num:hover,
+.calculate:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+}
+
+.operator:hover,
+.clear:hover {
+    cursor: pointer;
+    background-color: var(--operator-hover);
+}
